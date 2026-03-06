@@ -34,7 +34,7 @@ const scrollNav = document.querySelector(".Scroll-Nav")
 function navbarScroll(){
     if (scrollY != 0){
        scrollNav.style.display = "Flex" 
-       scrollNav.style.width = "50%"
+       scrollNav.style.width = (window.innerWidth - (navbar.style.paddingRight.replace("px", "") * 2)) + "px";
     } else {
         scrollNav.style.display = "None"
     }
