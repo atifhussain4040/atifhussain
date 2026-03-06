@@ -34,7 +34,6 @@ header {
 }
 
 .Nav-Menu {
-    width: 60%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -42,6 +41,49 @@ header {
 }
 
 .Nav-Menu a{
-    color: white;
+    color: rgb(190, 190, 190);
     font-size: 14px;
+    text-decoration: none;
+    margin: 0px 10px;
+    transition-duration: 0.1s;
+}
+
+.Nav-Menu a:hover {
+    color: white;
+}
+
+#Nav-Btn-Hire {
+    color: white;
+    background-color: #0076DF;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 750px){
+    .Nav-Menu {
+        display: none;
+    }
+}
+
+main {
+    color: rgb(255, 255, 255);
+}
+
+.Scroll-Nav {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 20px;
+    display: none;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    padding: 0px 20px;
+    border-radius: 16px;
+    top: 10px;
 }
